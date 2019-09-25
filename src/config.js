@@ -1,24 +1,24 @@
 const utils = require("./configutils"); // Utility functions
 
 // The trigger word that precedes most commands and will activate the bot
-exports.trigger = "physics";
+exports.trigger = ">>";
 
 // Bot owner information
 exports.owner = {
     "names": {
-        "short": "Cameron",
-        "long": "Cameron Bernhardt"
+        "short": "Nexus",
+        "long": "NexusLove"
     },
-    "id": "100007016509302" // ID of bot owner (for secure commands, reports, and alerts)
+    "id": "798227540595716" // ID of bot owner (for secure commands, reports, and alerts)
 };
 
 // Bot information
 exports.bot = {
     "names": {
-        "short": "AØBøt", // Will be used as 'nickname' in chat (remove if same as account name)
-        "long": "AssumeZero Bot" // Name displayed in profile on bot's Facebook account
+        "short": "HN", // Will be used as 'nickname' in chat (remove if same as account name)
+        "long": "HiveNet" // Name displayed in profile on bot's Facebook account
     },
-    "id": "100039914514233" // Bot's ID (for security purposes in commands)
+    "id": "798227540595716" // Bot's ID (for security purposes in commands)
 }
 
 // Determines whether bot grammar is "contextless"
@@ -32,7 +32,7 @@ exports.defaultTitle = "Unnamed chat"
 
 // Heroku settings (might need to tweak some things if using another host)
 // App name
-exports.appName = "assume-bot";
+exports.appName = "hivenetfb";
 
 // Server URL
 exports.serverURL = `http://${exports.appName}.herokuapp.com`;
@@ -93,8 +93,8 @@ exports.votePoints = 5;
 
 // Default playlist to use if group has no added playlists
 exports.defaultPlaylist = {
-    "name": "Assume Zero Brain Power",
-    "user": "astrocb",
+    "name": "HiveNet",
+    "user": "HiveNet",
     "uri": "4joxRVv8wzT4keFzCS3gAt"
 };
 
