@@ -5,13 +5,13 @@ all:
 	git commit -m $(m)
 	git push origin
 enable:
-	heroku ps:scale web=1 -a assume-bot
+	heroku ps:scale web=1 -a hivenetfb
 disable:
-	heroku ps:scale web=0 -a assume-bot
+	heroku ps:scale web=0 -a hivenetfb
 restart:
-	heroku ps:restart web -a assume-bot
+	heroku ps:restart web -a hivenetfb
 logs:
-	heroku logs -n 100 -a assume-bot
+	heroku logs -n 100 -a hivenetfb
 start:
 	npm start
 archive:
@@ -19,7 +19,7 @@ archive:
 restore:
 	node src/archive.js --restore
 bash:
-	heroku run bash -a assume-bot
+	heroku run bash -a hivenetfb
 logout:
 	node src/login.js --logout
 debug: disable start
